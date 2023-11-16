@@ -1,0 +1,27 @@
+.size100{
+    width: 100px;
+    height: 100px;
+}
+
+.bg{
+    background-color: red;
+    transition: 1.5s;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.size200{
+    height: 200px;
+    width: 100%;
+    background-color: burlywood;
+}
+.bg:hover{
+    background-color: gray;
+    transition: 1.5s;
+    border-radius: 50%;
+}

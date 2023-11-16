@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+}
+
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #31a097;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    width: 35vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+}
+header{
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header  p{
+    font-size: 40px;
+}
+main{
+    width: 35vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.input{
+    width: 25vw;
+    height: 4vh;
+}
+label{
+    font-size: 20px;
+}
+.batton{
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-between ;
+}
+.tor{
+    width: 35vw;
+    height: 20vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+button{
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: inset;
+}
+
+

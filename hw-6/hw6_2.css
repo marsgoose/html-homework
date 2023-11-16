@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100vw;
+    height: 34vh;
+    background-color: #bb51e1;
+}
+.header{
+    width: 100vw;
+    height: 66vh;
+    display: flex;
+}
+.main{
+    width: 75vw;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    height: 33vh;
+    width: 75vw;
+    background-color: #3b5998;
+}
+.section{
+    width: 75vw;
+    height: 33vh;
+    display: flex;
+}
+.lightgreen{
+    width: 25vw;
+    height: 33vh;
+    background-color: lightgreen;
+}
+.green{
+    width: 25vw;
+    height: 33vh;
+    background-color: green;
+}
+.darkgreen{
+    width: 25vw;
+    height: 33vh;
+    background-color: darkgreen;
+}
+footer{
+    height: 66vh;
+    width: 25vw;
+    background-color: chocolate;
+}

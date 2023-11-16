@@ -1,0 +1,16 @@
+@media screen and (max-width: 480px){
+    footer, header{
+        width: 100vw;
+        height: 15vh;
+    }
+    main{
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .main{
+        width: 100vw;
+        height: 85vh;
+        flex-direction: column;
+    }
+}

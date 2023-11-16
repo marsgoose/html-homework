@@ -1,0 +1,37 @@
+.size250{
+    width: 250px;
+    height: 250px;
+}
+
+.bg{
+    background-color: burlywood;
+}
+
+.main{
+display: flex;
+    justify-content: space-around;
+
+}
+.low{
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.st{
+    font-family: 'Rubik Pixels', sans-serif;
+}
+.ts{
+    font-family: 'Sedgwick Ave Display', sans-serif;
+}
+.ps{
+    font-family: 'Dancing Script', sans-serif;
+}
+.sp{
+    font-family: 'Fjalla One', sans-serif;
+}
+.pst{
+    font-family: 'Indie Flower', sans-serif;
+}

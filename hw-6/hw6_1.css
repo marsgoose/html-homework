@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+header{
+    width: 100vw;
+    height: 25vh;
+    background-color: #bb51e1;
+}
+.main{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+}
+main{
+    height: 75vh;
+    width: 75vw;
+    background-color: #5ac5c5;
+}
+footer{
+    height: 75vh;
+    width: 25vw;
+    background-color: #7fb04b;
+}

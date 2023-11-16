@@ -1,0 +1,125 @@
+body{
+    margin-top: 20px;
+}
+
+.root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+flex-direction: column;
+
+}
+.rot{
+    width: 40vw;
+    height: 85vh;
+    border-style: groove;
+    border-radius: 10px;
+
+}
+header{
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.tort{
+    width: 20vw;
+    height: 13vh;
+    background-image: url("https://github.com/dianaklr/HTML_Sept/blob/master/HW/HW%204/instagramLogo.png?raw=true");
+    background-size: cover;
+}
+main{
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.trot{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 30vw;
+    height: 7vh;
+    font-size: 25px;
+    border-radius: 5px;
+    border-color: #989595;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+button{
+    width: 30vw;
+    height: 7vh;
+    font-size: 30px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+.section{
+    width: 40vw;
+    height: 25vh;
+}
+section{
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+section p{
+    font-size: 30px;
+margin-top: 0;
+    color: #817B7B;
+}
+section a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #3b5998 ;
+    margin-top: 0;
+}
+#rd{
+    font-size: 25px;
+}
+footer{
+    width: 40vw;
+    height: 15vh;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    border-radius: 10px;
+}
+footer p{
+    font-size: 30px;
+
+}
+footer a{
+    font-size: 30px;
+    text-decoration: none;
+    color: dodgerblue;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
