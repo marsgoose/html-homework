@@ -39,7 +39,7 @@ let users = [
 
 for (let i = 0; i < users.length; i++) {
     const user = users[i];
-   if (user.age > 30) {
-  console.log(user)
-   }
+    if (user.age > 30) {
+        console.log(user)
+    }
 }
