@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="array"></div>
+<script>
+
+
+    //- Є масив
+    let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+    ];
+  //  Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
+  //  Завдання робити через цикли.
+    let allDiv = document.getElementsByClassName('array')[0];
+    for (const array of coursesAndDurationArray) {
+        let div = document.createElement('div');
+        div.classList.add('array');
+        div.innerText = array.title + ' ' + array.monthDuration;
+        allDiv.appendChild(div);}
+
+</script>
+</body>
+</html>

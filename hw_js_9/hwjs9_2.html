@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul class='mains'> </ul>
+
+<script>
+   // - Є масив:
+  //      ['Main','Products','About us','Contacts']
+  //  Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
+
+
+
+
+    let allMainsDiv = document.getElementsByClassName('mains')[0];
+    let mains = ['Main','Products','About us','Contacts']
+   for (const main of mains) {
+       let li = document.createElement('li');
+       li.classList.add('main');
+       li.innerText = main;
+       allMainsDiv.appendChild(li);
+   }
+</script>
+</body>
+</html>
