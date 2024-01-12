@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #head{
+            background-color: aqua;
+        }
+.placeCom{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.colorCom{
+    background-color: #7fb04b;
+
+}
+
+    </style>
+</head>
+<body>
+<div id="head"></div>
+<script>
+    let url = new URL(location.href)
+    let postId = url.searchParams.get('post')
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
+        .then(value => value.json())
+        .then(post => {
+            console.log(post)
+
+            let head = document.getElementById('head')
+            let div = document.createElement('div')
+            let h2 = document.createElement('h2')
+            let h2Title = document.createElement('h2')
+            let p = document.createElement('p')
+
+
+            h2.innerText =`Post-id:${post.id}; User-id:${post.userId}`
+            h2Title.innerText = `Title: ${post.title}`
+            p.innerText = `${post.body}`
+
+
+            div.append(h2, h2Title, p)
+            head.appendChild(div)
+        })
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+        .then(value => value.json())
+        .then(comments =>{
+            console.log(comments)
+            let main = document.createElement('div')
+                main.classList.add('placeCom')
+            for (let comment of comments){
+                let div = document.createElement('div')
+                div.classList.add('colorCom')
+                let h1 = document.createElement('h1')
+                let name = document.createElement('h3')
+                let email = document.createElement('h4')
+                let body = document.createElement('p')
+
+
+
+                h1.innerText = `Comment ID:${comment.id}; Post ID:${comment.postId}`
+                name.innerText = `Name:${comment.name}`
+                email.innerText = `Email:${comment.email}`
+                body.innerText = `${comment.body}`
+
+
+
+                div.append(h1, name, email, body)
+                main.appendChild(div)
+            }
+
+            document.body.appendChild(main)
+        })
+</script>
+</body>
+</html>

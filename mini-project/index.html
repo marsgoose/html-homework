@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+#head{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+#div1{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#div2{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.userBtn{
+     width: 4vw;
+}
+.userDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+
+<header id="head"><div id="div1"></div><div id="div2"></div></header>
+
+<script>
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(users => {
+
+
+            for (const user of users) {
+
+
+            let div1 = document.getElementById('div1');
+            let div2 = document.getElementById('div2');
+            let div = document.createElement('div');
+            div.innerText = `${user.id} ${user.name}`;
+            div.classList.add('userDiv')
+                let btn = document.createElement('button');
+                btn.innerText = 'Info';
+                btn.classList.add('userBtn');
+                div.appendChild(btn)
+                btn.addEventListener('click', () => {
+
+                    document.location.href = './user-details.html?id=' + JSON.stringify(user.id)
+                })
+
+                if (user.id <= 5) {
+                    div1.appendChild(div)
+            } else {div2.appendChild(div)}
+
+
+            }
+
+        })
+
+</script>
+</body>
+</html>
